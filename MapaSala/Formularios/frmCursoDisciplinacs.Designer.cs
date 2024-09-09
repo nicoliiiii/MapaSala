@@ -32,7 +32,7 @@ namespace MapaSala.Formularios
             this.Disciplinas = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.CbxCursos = new System.Windows.Forms.ComboBox();
-            this.btnadd = new System.Windows.Forms.Button();
+            this.btnAdicionar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CbxDisciplinas = new System.Windows.Forms.ComboBox();
             this.CbxPeriodos = new System.Windows.Forms.ComboBox();
@@ -67,15 +67,15 @@ namespace MapaSala.Formularios
             this.CbxCursos.TabIndex = 4;
             this.CbxCursos.SelectedIndexChanged += new System.EventHandler(this.cbxCursos_SelectedIndexChanged);
             // 
-            // btnadd
+            // btnAdicionar
             // 
-            this.btnadd.Location = new System.Drawing.Point(217, 63);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(75, 23);
-            this.btnadd.TabIndex = 5;
-            this.btnadd.Text = "Adicionar";
-            this.btnadd.UseVisualStyleBackColor = true;
-            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
+            this.btnAdicionar.Location = new System.Drawing.Point(217, 63);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btnAdicionar.TabIndex = 5;
+            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // dataGridView1
             // 
@@ -128,7 +128,7 @@ namespace MapaSala.Formularios
             this.Controls.Add(this.CbxPeriodos);
             this.Controls.Add(this.CbxDisciplinas);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnadd);
+            this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.CbxCursos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Disciplinas);
@@ -145,7 +145,7 @@ namespace MapaSala.Formularios
         private System.Windows.Forms.Label Disciplinas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox CbxCursos;
-        private System.Windows.Forms.Button btnadd;
+        private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox CbxDisciplinas;
         private System.Windows.Forms.ComboBox CbxPeriodos;
