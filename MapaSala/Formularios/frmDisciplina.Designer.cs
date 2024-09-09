@@ -40,6 +40,7 @@ namespace MapaSala.Formularios
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridDisciplina)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +48,7 @@ namespace MapaSala.Formularios
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(629, 41);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(99, 35);
             this.btnSalvar.TabIndex = 0;
@@ -58,17 +59,17 @@ namespace MapaSala.Formularios
             // txtNomeDisciplina
             // 
             this.txtNomeDisciplina.Location = new System.Drawing.Point(196, 45);
-            this.txtNomeDisciplina.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNomeDisciplina.Margin = new System.Windows.Forms.Padding(5);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(243, 27);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(243, 23);
             this.txtNomeDisciplina.TabIndex = 1;
             // 
             // txtSigla
             // 
             this.txtSigla.Location = new System.Drawing.Point(451, 46);
-            this.txtSigla.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtSigla.Margin = new System.Windows.Forms.Padding(5);
             this.txtSigla.Name = "txtSigla";
-            this.txtSigla.Size = new System.Drawing.Size(164, 27);
+            this.txtSigla.Size = new System.Drawing.Size(164, 23);
             this.txtSigla.TabIndex = 2;
             // 
             // label1
@@ -77,7 +78,7 @@ namespace MapaSala.Formularios
             this.label1.Location = new System.Drawing.Point(446, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 20);
+            this.label1.Size = new System.Drawing.Size(39, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sigla";
             // 
@@ -87,7 +88,7 @@ namespace MapaSala.Formularios
             this.label2.Location = new System.Drawing.Point(191, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.Size = new System.Drawing.Size(45, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nome";
             // 
@@ -97,16 +98,16 @@ namespace MapaSala.Formularios
             this.label3.Location = new System.Drawing.Point(21, 20);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 20);
+            this.label3.Size = new System.Drawing.Size(19, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Id";
             // 
             // numId
             // 
             this.numId.Location = new System.Drawing.Point(21, 46);
-            this.numId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.numId.Margin = new System.Windows.Forms.Padding(5);
             this.numId.Name = "numId";
-            this.numId.Size = new System.Drawing.Size(165, 27);
+            this.numId.Size = new System.Drawing.Size(165, 23);
             this.numId.TabIndex = 6;
             // 
             // dtGridDisciplina
@@ -116,19 +117,19 @@ namespace MapaSala.Formularios
             this.dtGridDisciplina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridDisciplina.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtGridDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridDisciplina.Location = new System.Drawing.Point(20, 100);
-            this.dtGridDisciplina.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtGridDisciplina.Location = new System.Drawing.Point(26, 145);
+            this.dtGridDisciplina.Margin = new System.Windows.Forms.Padding(5);
             this.dtGridDisciplina.Name = "dtGridDisciplina";
             this.dtGridDisciplina.ReadOnly = true;
             this.dtGridDisciplina.RowHeadersWidth = 51;
-            this.dtGridDisciplina.Size = new System.Drawing.Size(1026, 552);
+            this.dtGridDisciplina.Size = new System.Drawing.Size(1026, 426);
             this.dtGridDisciplina.TabIndex = 7;
             this.dtGridDisciplina.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridDisciplina_CellClick);
             // 
             // btnLimpar
             // 
             this.btnLimpar.Location = new System.Drawing.Point(736, 40);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(99, 35);
             this.btnLimpar.TabIndex = 8;
@@ -139,7 +140,7 @@ namespace MapaSala.Formularios
             // btnExcluir
             // 
             this.btnExcluir.Location = new System.Drawing.Point(846, 40);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(101, 35);
             this.btnExcluir.TabIndex = 9;
@@ -150,7 +151,7 @@ namespace MapaSala.Formularios
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(959, 40);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 35);
             this.button1.TabIndex = 10;
@@ -158,11 +159,19 @@ namespace MapaSala.Formularios
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btneditar);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(86, 114);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 11;
+            // 
             // frmDisciplina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 692);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnLimpar);
@@ -175,7 +184,7 @@ namespace MapaSala.Formularios
             this.Controls.Add(this.txtNomeDisciplina);
             this.Controls.Add(this.btnSalvar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmDisciplina";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDisciplina";
@@ -200,5 +209,6 @@ namespace MapaSala.Formularios
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
