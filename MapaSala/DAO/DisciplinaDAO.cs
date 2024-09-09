@@ -56,7 +56,7 @@ namespace MapaSala.DAO
             return dataTable;
         }
 
-        public DataTable ObterProfessores()
+        public DataTable ObterDisciplinas()
         {
             DataTable dt = new DataTable();
             Conexao.Open();
