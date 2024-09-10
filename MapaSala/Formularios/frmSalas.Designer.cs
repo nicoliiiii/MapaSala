@@ -44,6 +44,8 @@ namespace MapaSala.Formularios
             this.btneditar = new System.Windows.Forms.Button();
             this.btnexcluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.lblPesquisa = new System.Windows.Forms.Label();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumPc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumCadeira)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridSalas)).BeginInit();
@@ -122,10 +124,10 @@ namespace MapaSala.Formularios
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(862, 26);
+            this.btnSalvar.Location = new System.Drawing.Point(862, 34);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(96, 35);
+            this.btnSalvar.Size = new System.Drawing.Size(96, 27);
             this.btnSalvar.TabIndex = 10;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -150,13 +152,13 @@ namespace MapaSala.Formularios
             // dtGridSalas
             // 
             this.dtGridSalas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridSalas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dtGridSalas.BackgroundColor = System.Drawing.Color.Pink;
             this.dtGridSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridSalas.Location = new System.Drawing.Point(20, 119);
+            this.dtGridSalas.Location = new System.Drawing.Point(19, 221);
             this.dtGridSalas.Margin = new System.Windows.Forms.Padding(5);
             this.dtGridSalas.Name = "dtGridSalas";
             this.dtGridSalas.RowHeadersWidth = 51;
-            this.dtGridSalas.Size = new System.Drawing.Size(1121, 541);
+            this.dtGridSalas.Size = new System.Drawing.Size(1121, 406);
             this.dtGridSalas.TabIndex = 13;
             this.dtGridSalas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridSalas_CellClick);
             // 
@@ -164,7 +166,7 @@ namespace MapaSala.Formularios
             // 
             this.numId.Location = new System.Drawing.Point(19, 53);
             this.numId.Name = "numId";
-            this.numId.Size = new System.Drawing.Size(77, 23);
+            this.numId.Size = new System.Drawing.Size(64, 23);
             this.numId.TabIndex = 14;
             // 
             // btneditar
@@ -173,7 +175,7 @@ namespace MapaSala.Formularios
             this.btneditar.Location = new System.Drawing.Point(989, 71);
             this.btneditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btneditar.Name = "btneditar";
-            this.btneditar.Size = new System.Drawing.Size(110, 39);
+            this.btneditar.Size = new System.Drawing.Size(110, 28);
             this.btneditar.TabIndex = 17;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = true;
@@ -181,10 +183,10 @@ namespace MapaSala.Formularios
             // 
             // btnexcluir
             // 
-            this.btnexcluir.Location = new System.Drawing.Point(989, 26);
+            this.btnexcluir.Location = new System.Drawing.Point(989, 32);
             this.btnexcluir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnexcluir.Name = "btnexcluir";
-            this.btnexcluir.Size = new System.Drawing.Size(110, 35);
+            this.btnexcluir.Size = new System.Drawing.Size(110, 25);
             this.btnexcluir.TabIndex = 16;
             this.btnexcluir.Text = "Excluir";
             this.btnexcluir.UseVisualStyleBackColor = true;
@@ -195,17 +197,36 @@ namespace MapaSala.Formularios
             this.btnLimpar.Location = new System.Drawing.Point(862, 71);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(96, 39);
+            this.btnLimpar.Size = new System.Drawing.Size(96, 28);
             this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // lblPesquisa
+            // 
+            this.lblPesquisa.AutoSize = true;
+            this.lblPesquisa.Location = new System.Drawing.Point(31, 160);
+            this.lblPesquisa.Name = "lblPesquisa";
+            this.lblPesquisa.Size = new System.Drawing.Size(71, 17);
+            this.lblPesquisa.TabIndex = 18;
+            this.lblPesquisa.Text = "Pesquisar";
+            // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.Location = new System.Drawing.Point(34, 180);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(341, 23);
+            this.txtPesquisa.TabIndex = 19;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // frmSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 692);
+            this.Controls.Add(this.txtPesquisa);
+            this.Controls.Add(this.lblPesquisa);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.btnexcluir);
             this.Controls.Add(this.btnLimpar);
@@ -253,5 +274,7 @@ namespace MapaSala.Formularios
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button btnexcluir;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Label lblPesquisa;
+        private System.Windows.Forms.TextBox txtPesquisa;
     }
 }

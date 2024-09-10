@@ -82,7 +82,7 @@ namespace MapaSala.Formularios
             // dtGridCursos
             // 
             this.dtGridCursos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridCursos.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dtGridCursos.BackgroundColor = System.Drawing.Color.Pink;
             this.dtGridCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridCursos.Location = new System.Drawing.Point(63, 132);
             this.dtGridCursos.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);

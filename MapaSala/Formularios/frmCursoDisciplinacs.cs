@@ -16,6 +16,12 @@ namespace MapaSala.Formularios
     {
         DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
         CursoDAO cursoDAO = new CursoDAO();
+        CursoDisplinaDAO dao = new CursoDisplinaDAO();
+
+        private void AtualizarGrid(DataTable dados)
+        {
+            dtCursoDisciplina.DataSource = dados;
+        }
         public frmCursoDisciplinacs()
         {
             InitializeComponent();
@@ -28,41 +34,12 @@ namespace MapaSala.Formularios
             CbxCursos.DisplayMember = "Nome";
             CbxCursos.ValueMember = "Id";
 
-           // lsDisciplinas.Items.AddRange(disciplinaDAO.Listbox());
+            AtualizarGrid(dao.ObterCursoDisciplina());
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lsCurso_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void cbxCursos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmCursoDisciplinacs_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CbxDisciplinas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
+        
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
@@ -74,6 +51,7 @@ namespace MapaSala.Formularios
             entidade.Periodo = CbxPeriodos.SelectedValue.ToString();
 
             cursoDisplinaDAO.Inserir(entidade);
+            AtualizarGrid(dao.ObterCursoDisciplina());
         }
     }
 }

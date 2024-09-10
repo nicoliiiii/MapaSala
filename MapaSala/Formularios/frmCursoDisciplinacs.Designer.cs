@@ -33,11 +33,11 @@ namespace MapaSala.Formularios
             this.label2 = new System.Windows.Forms.Label();
             this.CbxCursos = new System.Windows.Forms.ComboBox();
             this.btnAdicionar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtCursoDisciplina = new System.Windows.Forms.DataGridView();
             this.CbxDisciplinas = new System.Windows.Forms.ComboBox();
             this.CbxPeriodos = new System.Windows.Forms.ComboBox();
             this.TxtPeriodo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtCursoDisciplina)).BeginInit();
             this.SuspendLayout();
             // 
             // Disciplinas
@@ -65,7 +65,6 @@ namespace MapaSala.Formularios
             this.CbxCursos.Name = "CbxCursos";
             this.CbxCursos.Size = new System.Drawing.Size(121, 21);
             this.CbxCursos.TabIndex = 4;
-            this.CbxCursos.SelectedIndexChanged += new System.EventHandler(this.cbxCursos_SelectedIndexChanged);
             // 
             // btnAdicionar
             // 
@@ -77,14 +76,14 @@ namespace MapaSala.Formularios
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
-            // dataGridView1
+            // dtCursoDisciplina
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(739, 255);
-            this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dtCursoDisciplina.BackgroundColor = System.Drawing.Color.Pink;
+            this.dtCursoDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtCursoDisciplina.Location = new System.Drawing.Point(12, 115);
+            this.dtCursoDisciplina.Name = "dtCursoDisciplina";
+            this.dtCursoDisciplina.Size = new System.Drawing.Size(739, 255);
+            this.dtCursoDisciplina.TabIndex = 6;
             // 
             // CbxDisciplinas
             // 
@@ -93,7 +92,6 @@ namespace MapaSala.Formularios
             this.CbxDisciplinas.Name = "CbxDisciplinas";
             this.CbxDisciplinas.Size = new System.Drawing.Size(121, 21);
             this.CbxDisciplinas.TabIndex = 7;
-            this.CbxDisciplinas.SelectedIndexChanged += new System.EventHandler(this.CbxDisciplinas_SelectedIndexChanged);
             // 
             // CbxPeriodos
             // 
@@ -127,15 +125,14 @@ namespace MapaSala.Formularios
             this.Controls.Add(this.TxtPeriodo);
             this.Controls.Add(this.CbxPeriodos);
             this.Controls.Add(this.CbxDisciplinas);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtCursoDisciplina);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.CbxCursos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Disciplinas);
             this.Name = "frmCursoDisciplinacs";
             this.Text = "frmCursoDisciplinacs";
-            this.Load += new System.EventHandler(this.frmCursoDisciplinacs_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtCursoDisciplina)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,7 +143,7 @@ namespace MapaSala.Formularios
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox CbxCursos;
         private System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtCursoDisciplina;
         private System.Windows.Forms.ComboBox CbxDisciplinas;
         private System.Windows.Forms.ComboBox CbxPeriodos;
         private System.Windows.Forms.Label TxtPeriodo;
