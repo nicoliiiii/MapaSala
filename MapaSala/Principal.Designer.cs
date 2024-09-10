@@ -81,7 +81,7 @@ namespace MapaSala
             this.diasDaSemanaToolStripMenuItem,
             this.cursosXDisciplinasToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(83, 25);
             this.toolStripMenuItem1.Text = "Cadastros";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -128,8 +128,8 @@ namespace MapaSala
             // cursosXDisciplinasToolStripMenuItem
             // 
             this.cursosXDisciplinasToolStripMenuItem.Name = "cursosXDisciplinasToolStripMenuItem";
-            this.cursosXDisciplinasToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.cursosXDisciplinasToolStripMenuItem.Text = "Cursos x Disciplinas";
+            this.cursosXDisciplinasToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.cursosXDisciplinasToolStripMenuItem.Text = "Curso_Disciplinas";
             this.cursosXDisciplinasToolStripMenuItem.Click += new System.EventHandler(this.cursosXDisciplinasToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
