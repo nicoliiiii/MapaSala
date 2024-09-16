@@ -41,6 +41,8 @@ namespace MapaSala.Formularios
             this.label1 = new System.Windows.Forms.Label();
             this.numId = new System.Windows.Forms.NumericUpDown();
             this.chkativo = new System.Windows.Forms.CheckBox();
+            this.lblPesquisar = new System.Windows.Forms.Label();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridCursos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numId)).BeginInit();
             this.SuspendLayout();
@@ -170,11 +172,30 @@ namespace MapaSala.Formularios
             this.chkativo.UseVisualStyleBackColor = true;
             this.chkativo.CheckedChanged += new System.EventHandler(this.chkIsLab_CheckedChanged);
             // 
+            // lblPesquisar
+            // 
+            this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.Location = new System.Drawing.Point(77, 143);
+            this.lblPesquisar.Name = "lblPesquisar";
+            this.lblPesquisar.Size = new System.Drawing.Size(69, 16);
+            this.lblPesquisar.TabIndex = 23;
+            this.lblPesquisar.Text = "Pesquisar";
+            // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.Location = new System.Drawing.Point(80, 162);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(265, 22);
+            this.txtPesquisa.TabIndex = 24;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
+            // 
             // frmCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.txtPesquisa);
+            this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.chkativo);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.btnexcluir);
@@ -214,5 +235,7 @@ namespace MapaSala.Formularios
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numId;
         private System.Windows.Forms.CheckBox chkativo;
+        private System.Windows.Forms.Label lblPesquisar;
+        private System.Windows.Forms.TextBox txtPesquisa;
     }
 }

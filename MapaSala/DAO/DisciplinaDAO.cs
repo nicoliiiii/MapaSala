@@ -12,7 +12,7 @@ namespace MapaSala.DAO
 {
     public class DisciplinaDAO
     {
-        private string LinhaConexao = "Server=LS05MPF;Database=AULA_DS;User Id=sa;Password=admsasql;";// link do site
+        private string LinhaConexao = "Server=LS05MPF;Database=AULA_DS;User Id=sa;Password=admsasql;";
         private SqlConnection Conexao; //comunicacao programa/banco
 
         public DisciplinaDAO()
@@ -60,7 +60,7 @@ namespace MapaSala.DAO
         {
             DataTable dt = new DataTable();
             Conexao.Open();
-            string query = "SELECT * FROM DISCIPLINA ORDER BY Id desc";
+            string query = "SELECT * FROM DISCIPLINAS ORDER BY Id desc";
             SqlCommand Comando = new SqlCommand(query, Conexao);
 
 
@@ -92,11 +92,11 @@ namespace MapaSala.DAO
             string query = "";
             if (string.IsNullOrEmpty(pesquisa))
             {
-                query = "SELECT * FROM Disciplina ORDER BY ID desc";
+                query = "SELECT * FROM Disciplinas ORDER BY ID desc";
             }
             else
             {
-                query = "SELECT * FROM Disciplina WHERE NOME LIKE '%" + pesquisa + "%' ORDER BY ID desc"; //concatenação
+                query = "SELECT * FROM Disciplinas WHERE NOME LIKE '%" + pesquisa + "%' ORDER BY ID desc"; 
             }
 
             SqlCommand Comando = new SqlCommand(query, Conexao);

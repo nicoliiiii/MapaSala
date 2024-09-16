@@ -1,4 +1,5 @@
-﻿using Model.Entidades;
+﻿using MapaSala.DAO;
+using Model.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace MapaSala.Formularios
     public partial class frmCursos : Form
     {
         DataTable dados;
+        CursoDAO dao = new CursoDAO();
         int LinhaSelecionada;
         public frmCursos()
         {
@@ -25,10 +27,7 @@ namespace MapaSala.Formularios
                 dados.Columns.Add(atributos.Name);
             }
 
-            dados.Rows.Add(1, "desenvolvimento de sistemas", "manha", true);
-            dados.Rows.Add(2, "administraçao", "noite", true);
-            dados.Rows.Add(3, "serviços juridicos", "tarde", false);
-            dados.Rows.Add(4, " infonet", "tarde", true);
+            
 
             dtGridCursos.DataSource = dados;
         }
@@ -95,6 +94,11 @@ namespace MapaSala.Formularios
             a.Cells[1].Value = txtNome.Text;
             a.Cells[2].Value = txtturno.Text;
             a.Cells[3].Value = chkativo.Checked;
+        }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            dtGridCursos.DataSource = dao.Pesquisar(txtPesquisa.Text);
         }
     }
 }

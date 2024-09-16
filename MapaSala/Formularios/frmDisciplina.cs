@@ -29,11 +29,8 @@ namespace MapaSala.Formularios
                 dados.Columns.Add(atributos.Name);
             }
 
-            dados.Rows.Add(1, "Matematica", "MAT");
-            dados.Rows.Add(2, "Português", "PORT");
-            dados.Rows.Add(3, "Física", "FIS");
-
-            dtGridDisciplina.DataSource = dados;
+         
+            dtGridDisciplina.DataSource = dao.ObterDisciplinas();
             
         }
 

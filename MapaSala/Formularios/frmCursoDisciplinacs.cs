@@ -48,7 +48,7 @@ namespace MapaSala.Formularios
 
             entidade.CursoId = Convert.ToInt32(CbxCursos.SelectedValue);
             entidade.DisciplinaId = Convert.ToInt32(CbxDisciplinas.SelectedValue);
-            entidade.Periodo = CbxPeriodos.SelectedValue.ToString();
+            entidade.Periodo = CbxPeriodos.SelectedItem.ToString();
 
             cursoDisplinaDAO.Inserir(entidade);
             AtualizarGrid(dao.ObterCursoDisciplina());
