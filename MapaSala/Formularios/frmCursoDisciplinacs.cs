@@ -53,5 +53,10 @@ namespace MapaSala.Formularios
             cursoDisplinaDAO.Inserir(entidade);
             AtualizarGrid(dao.ObterCursoDisciplina());
         }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            dtCursoDisciplina.DataSource = dao.Pesquisar(txtPesquisa.Text);
+        }
     }
 }
