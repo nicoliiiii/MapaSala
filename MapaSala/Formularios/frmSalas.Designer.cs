@@ -124,13 +124,14 @@ namespace MapaSala.Formularios
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnSalvar.Location = new System.Drawing.Point(862, 34);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(96, 27);
             this.btnSalvar.TabIndex = 10;
             this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtNumPc
@@ -171,6 +172,7 @@ namespace MapaSala.Formularios
             // 
             // btneditar
             // 
+            this.btneditar.BackColor = System.Drawing.Color.LavenderBlush;
             this.btneditar.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btneditar.Location = new System.Drawing.Point(989, 71);
             this.btneditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -178,29 +180,31 @@ namespace MapaSala.Formularios
             this.btneditar.Size = new System.Drawing.Size(110, 28);
             this.btneditar.TabIndex = 17;
             this.btneditar.Text = "Editar";
-            this.btneditar.UseVisualStyleBackColor = true;
+            this.btneditar.UseVisualStyleBackColor = false;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // btnexcluir
             // 
+            this.btnexcluir.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnexcluir.Location = new System.Drawing.Point(989, 32);
             this.btnexcluir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnexcluir.Name = "btnexcluir";
             this.btnexcluir.Size = new System.Drawing.Size(110, 25);
             this.btnexcluir.TabIndex = 16;
             this.btnexcluir.Text = "Excluir";
-            this.btnexcluir.UseVisualStyleBackColor = true;
+            this.btnexcluir.UseVisualStyleBackColor = false;
             this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnLimpar.Location = new System.Drawing.Point(862, 71);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(96, 28);
             this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // lblPesquisa

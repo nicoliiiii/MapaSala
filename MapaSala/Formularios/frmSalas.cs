@@ -50,9 +50,8 @@ namespace MapaSala.Formularios
             d.IsLab = chkIsLab.Checked;
             d.Disponivel = chkDisponivel.Checked;
 
-
-
-            dados.Rows.Add(d.Linha());
+            dao.Inserir(d);
+            dtGridSalas.DataSource = dao.ObterSalas();
             LimparCampos();
         }
         private void LimparCampos()

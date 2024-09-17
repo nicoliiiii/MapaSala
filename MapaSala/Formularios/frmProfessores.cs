@@ -37,7 +37,8 @@ namespace MapaSala.Formularios
             p.Id = Convert.ToInt32(numId.Value);
             p.Apelido = txtApelido.Text;
             p.Nome = txtNomeCompleto.Text;
-
+            dao.Inserir(p);
+            dtGridProfessores.DataSource = dao.ObterProfessores();
             dados.Rows.Add(p.Linha());
             LimparCampos();
         }

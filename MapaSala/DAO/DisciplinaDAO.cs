@@ -22,7 +22,7 @@ namespace MapaSala.DAO
         public void Inserir(DisciplinaEntidade disciplina)
         {
             Conexao.Open();
-            string query = "insert into Disciplina(Nome, Sigla) Values (@nome, @sigla)";
+            string query = "insert into Disciplinas (Nome, Sigla) Values (@nome, @sigla)";
             SqlCommand comando = new SqlCommand(query, Conexao);
             SqlParameter parametro1 = new SqlParameter("@nome", disciplina.Nome);
             SqlParameter parametro2 = new SqlParameter("@sigla", disciplina.Sigla);

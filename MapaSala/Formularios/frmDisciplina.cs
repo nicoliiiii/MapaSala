@@ -41,7 +41,8 @@ namespace MapaSala.Formularios
             d.Nome = txtNomeDisciplina.Text;
             d.Sigla = txtSigla.Text;
 
-            dados.Rows.Add(d.Linha());
+            dao.Inserir(d);
+            dtGridDisciplina.DataSource = dao.ObterDisciplinas();
             LimparCampos();
         }
 
