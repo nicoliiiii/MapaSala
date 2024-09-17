@@ -37,7 +37,7 @@ namespace MapaSala.DAO
         {
             DataTable dt = new DataTable();
             Conexao.Open();
-            string query = "SELECT * FROM PROFESSORES ORDER BY Id desc";
+            string query = "SELECT * FROM Salas ORDER BY Id desc";
             SqlCommand Comando = new SqlCommand(query, Conexao);
 
 
@@ -71,11 +71,11 @@ namespace MapaSala.DAO
             string query = "";
             if (string.IsNullOrEmpty(pesquisa))
             {
-                query = "SELECT * FROM PROFESSORES ORDER BY ID desc";
+                query = "SELECT * FROM Salas ORDER BY ID desc";
             }
             else
             {
-                query = "SELECT * FROM PROFESSORES WHERE NOME LIKE '%" + pesquisa + "%' ORDER BY ID desc"; //concatenação
+                query = "SELECT * FROM Salas WHERE NOME LIKE '%" + pesquisa + "%' ORDER BY ID desc"; //concatenação
             }
 
             SqlCommand Comando = new SqlCommand(query, Conexao);
