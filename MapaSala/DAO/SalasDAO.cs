@@ -43,7 +43,7 @@ namespace MapaSala.DAO
 
             SqlDataReader Leitura = Comando.ExecuteReader();
 
-            foreach (var atributos in typeof(ProfessoresEntidade).GetProperties())//laço de reoetição para ler listas
+            foreach (var atributos in typeof(SalasEntidade).GetProperties())//laço de reoetição para ler listas
             {
                 dt.Columns.Add(atributos.Name);
             }
