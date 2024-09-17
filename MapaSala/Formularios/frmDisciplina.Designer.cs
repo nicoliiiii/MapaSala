@@ -48,13 +48,14 @@ namespace MapaSala.Formularios
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnSalvar.Location = new System.Drawing.Point(629, 41);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(99, 35);
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtNomeDisciplina
@@ -129,35 +130,38 @@ namespace MapaSala.Formularios
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnLimpar.Location = new System.Drawing.Point(736, 40);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(99, 35);
             this.btnLimpar.TabIndex = 8;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnExcluir
             // 
+            this.btnExcluir.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnExcluir.Location = new System.Drawing.Point(846, 40);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(101, 35);
             this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
             this.button1.Location = new System.Drawing.Point(959, 40);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 35);
             this.button1.TabIndex = 10;
             this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.btneditar);
             // 
             // txtPesquisa

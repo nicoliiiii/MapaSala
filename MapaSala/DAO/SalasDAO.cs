@@ -30,6 +30,11 @@ namespace MapaSala.DAO
             SqlParameter parametro5 = new SqlParameter("@disponivel", sala.Disponivel);
             comando.Parameters.Add(parametro1);
             comando.Parameters.Add(parametro2);
+            comando.Parameters.Add(parametro3);
+            comando.Parameters.Add(parametro4);
+            comando.Parameters.Add(parametro5);
+
+
             comando.ExecuteNonQuery(); //nao retorna nd
             Conexao.Close();
         }
@@ -71,7 +76,7 @@ namespace MapaSala.DAO
             string query = "";
             if (string.IsNullOrEmpty(pesquisa))
             {
-                query = "SELECT * FROM Salas ORDER BY ID desc";
+                query = "SELECT * FROM Salas ORDER BY Id desc";
             }
             else
             {
