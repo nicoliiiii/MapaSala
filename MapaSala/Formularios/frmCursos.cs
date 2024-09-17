@@ -27,9 +27,7 @@ namespace MapaSala.Formularios
                 dados.Columns.Add(atributos.Name);
             }
 
-            
-
-            dtGridCursos.DataSource = dados;
+            dtGridCursos.DataSource = dao.ObterCurso();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -46,6 +44,7 @@ namespace MapaSala.Formularios
         {
             txtNome.Text = "";
             txtturno.Text = "";
+            txtSigla.Text = "";
             numId.Value = 0;
             chkativo.Checked = false;
         }
@@ -66,9 +65,10 @@ namespace MapaSala.Formularios
             curso.Id = Convert.ToInt32(numId.Value);
             curso.Nome = txtNome.Text;
             curso.Turno = txtturno.Text;
+            curso.Sigla = txtSigla.Text;
             curso.Ativo = chkativo.Checked;
-
-            dados.Rows.Add(curso.Linha());
+            dao.Inserir(curso);
+            dtGridCursos.DataSource = dao.ObterCurso();
             LimparCampos();
         }
 
@@ -84,7 +84,8 @@ namespace MapaSala.Formularios
             numId.Value = Convert.ToUInt32(dtGridCursos.Rows[LinhaSelecionada].Cells[0].Value);
             txtNome.Text = dtGridCursos.Rows[LinhaSelecionada].Cells[1].Value.ToString();
             txtturno.Text = dtGridCursos.Rows[LinhaSelecionada].Cells[2].Value.ToString();
-            chkativo.Checked = Convert.ToBoolean(dtGridCursos.Rows[LinhaSelecionada].Cells[3].Value);
+            txtSigla.Text = dtGridCursos.Rows[LinhaSelecionada].Cells[3].Value.ToString();
+            chkativo.Checked = Convert.ToBoolean(dtGridCursos.Rows[LinhaSelecionada].Cells[4].Value);
         }
 
         private void btneditar_Click(object sender, EventArgs e)
@@ -93,7 +94,8 @@ namespace MapaSala.Formularios
             a.Cells[0].Value = numId.Value;
             a.Cells[1].Value = txtNome.Text;
             a.Cells[2].Value = txtturno.Text;
-            a.Cells[3].Value = chkativo.Checked;
+            a.Cells[3].Value = txtturno.Text;
+            a.Cells[4].Value = chkativo.Checked;
         }
 
         private void txtPesquisa_TextChanged(object sender, EventArgs e)

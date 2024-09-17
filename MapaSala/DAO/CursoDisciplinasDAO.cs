@@ -75,20 +75,25 @@ namespace MapaSala.DAO
             string query = "";
             if (string.IsNullOrEmpty(pesquisa))
             {
-                query = "SELECT * FROM CURSO_DISCIPLINA ORDER BY ID desc";
+                query = @"SELECT C.Nome NomeCurso, D.Nome NomeDisciplina, CD.Periodo FROM CURSO_DISCIPLINA CD 
+                                INNER JOIN CURSOS C ON(C.Id = CD.Curso_Id)
+                                INNER JOIN DISCIPLINAS D ON(D.Id = CD.Disciplina_ID)
+                                ORDER BY CD.Id DESC";
             }
             else
             {
-                query = "SELECT * FROM CURSO_DISCIPLINA WHERE NOME LIKE '%" + pesquisa + "%' ORDER BY ID desc"; //concatenação
+                query = @"SELECT C.Nome NomeCurso, D.Nome NomeDisciplina, CD.Periodo FROM CURSO_DISCIPLINA CD 
+                                INNER JOIN CURSOS C ON(C.Id = CD.Curso_Id)
+                                INNER JOIN DISCIPLINAS D ON(D.Id = CD.Disciplina_ID)
+                                 WHERE D.NOME LIKE '%" + pesquisa + "%' OR  C.NOME LIKE '%" + pesquisa + "%' ORDER BY CD.ID desc"; //concatenação
             }
 
             SqlCommand Comando = new SqlCommand(query, Conexao);
             SqlDataReader Leitura = Comando.ExecuteReader();
+            dt.Columns.Add("NomeCurso");
+            dt.Columns.Add("DisciplinaId");
+            dt.Columns.Add("Periodo");
 
-            foreach (var atributos in typeof(CursoDisciplinaEntidade).GetProperties())//laço de reoetição para ler listas
-            {
-                dt.Columns.Add(atributos.Name);
-            }
             if (Leitura.HasRows) //a linha existe? true or false
             {
                 while (Leitura.Read())//para pegar mais de um registro, faz uma consulta

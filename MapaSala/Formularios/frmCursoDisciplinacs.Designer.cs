@@ -152,6 +152,7 @@ namespace MapaSala.Formularios
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Disciplinas);
             this.Name = "frmCursoDisciplinacs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCursoDisciplinacs";
             ((System.ComponentModel.ISupportInitialize)(this.dtCursoDisciplina)).EndInit();
             this.ResumeLayout(false);
