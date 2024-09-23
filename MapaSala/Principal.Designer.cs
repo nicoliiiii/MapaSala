@@ -65,7 +65,7 @@ namespace MapaSala
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(829, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -88,41 +88,41 @@ namespace MapaSala
             // cadastrosToolStripMenuItem
             // 
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.cadastrosToolStripMenuItem.Text = "Salas";
             this.cadastrosToolStripMenuItem.Click += new System.EventHandler(this.cadastrosToolStripMenuItem_Click);
             // 
             // relatoriosToolStripMenuItem
             // 
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
-            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.relatoriosToolStripMenuItem.Text = "Professores";
             this.relatoriosToolStripMenuItem.Click += new System.EventHandler(this.relatoriosToolStripMenuItem_Click);
             // 
             // disciplinasToolStripMenuItem
             // 
             this.disciplinasToolStripMenuItem.Name = "disciplinasToolStripMenuItem";
-            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.disciplinasToolStripMenuItem.Text = "Disciplinas";
             this.disciplinasToolStripMenuItem.Click += new System.EventHandler(this.disciplinasToolStripMenuItem_Click);
             // 
             // horáriosToolStripMenuItem
             // 
             this.horáriosToolStripMenuItem.Name = "horáriosToolStripMenuItem";
-            this.horáriosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.horáriosToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.horáriosToolStripMenuItem.Text = "Horários";
             // 
             // cursosToolStripMenuItem
             // 
             this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
-            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.cursosToolStripMenuItem.Text = "Cursos";
             this.cursosToolStripMenuItem.Click += new System.EventHandler(this.cursosToolStripMenuItem_Click);
             // 
             // diasDaSemanaToolStripMenuItem
             // 
             this.diasDaSemanaToolStripMenuItem.Name = "diasDaSemanaToolStripMenuItem";
-            this.diasDaSemanaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.diasDaSemanaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.diasDaSemanaToolStripMenuItem.Text = "Dias da Semana";
             // 
             // cursosXDisciplinasToolStripMenuItem
@@ -135,7 +135,7 @@ namespace MapaSala
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(47, 25);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // arquivoToolStripMenuItem
@@ -147,37 +147,37 @@ namespace MapaSala
             this.imprimirToolStripMenuItem,
             this.compartilharToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(71, 25);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
             // salvarToolStripMenuItem
             // 
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.salvarToolStripMenuItem.Text = "Salvar";
             // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // opçõesToolStripMenuItem
             // 
             this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
-            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.opçõesToolStripMenuItem.Text = "Opções";
             // 
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             // 
             // compartilharToolStripMenuItem
             // 
             this.compartilharToolStripMenuItem.Name = "compartilharToolStripMenuItem";
-            this.compartilharToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.compartilharToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.compartilharToolStripMenuItem.Text = "Compartilhar";
             // 
             // relatóriosToolStripMenuItem
@@ -187,32 +187,32 @@ namespace MapaSala
             this.salasLivresToolStripMenuItem,
             this.todosProfessoresToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(84, 25);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
             // faltasToolStripMenuItem
             // 
             this.faltasToolStripMenuItem.Name = "faltasToolStripMenuItem";
-            this.faltasToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.faltasToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
             this.faltasToolStripMenuItem.Text = "Faltas";
             // 
             // salasLivresToolStripMenuItem
             // 
             this.salasLivresToolStripMenuItem.Name = "salasLivresToolStripMenuItem";
-            this.salasLivresToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.salasLivresToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
             this.salasLivresToolStripMenuItem.Text = "Salas livres";
             // 
             // todosProfessoresToolStripMenuItem
             // 
             this.todosProfessoresToolStripMenuItem.Name = "todosProfessoresToolStripMenuItem";
-            this.todosProfessoresToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.todosProfessoresToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
             this.todosProfessoresToolStripMenuItem.Text = "Todos Professores";
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(829, 450);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
