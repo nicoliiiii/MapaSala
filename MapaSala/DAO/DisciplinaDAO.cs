@@ -62,24 +62,25 @@ namespace MapaSala.DAO
         {
             DataTable dt = new DataTable();
             Conexao.Open();
-            string query = "SELECT * FROM DISCIPLINAS ORDER BY Id desc";
+            string query = "SELECT Id, Nome, Sigla, Ativo FROM DISCIPLINAS ORDER BY Id desc";
             SqlCommand Comando = new SqlCommand(query, Conexao);
 
 
             SqlDataReader Leitura = Comando.ExecuteReader();
 
-            foreach (var atributos in typeof(ProfessoresEntidade).GetProperties())//laço de reoetição para ler listas
+            foreach (var atributos in typeof(DisciplinaEntidade).GetProperties())//laço de reoetição para ler listas
             {
                 dt.Columns.Add(atributos.Name);
             }
-            if (Leitura.HasRows) //a linha existe? true or false
+            if (Leitura.HasRows) 
             {
-                while (Leitura.Read())//para pegar mais de um registro, faz uma consulta
+                while (Leitura.Read())
                 {
                     DisciplinaEntidade d = new DisciplinaEntidade();
                     d.Id = Convert.ToInt32(Leitura[0]);
                     d.Nome = Leitura[1].ToString();
                     d.Sigla = Leitura[2].ToString();
+                    d.Ativo = Convert.ToBoolean(Leitura[3]);
                     dt.Rows.Add(d.Linha());
                 }
             }
@@ -116,6 +117,7 @@ namespace MapaSala.DAO
                     d.Id = Convert.ToInt32(Leitura[0]);
                     d.Nome = Leitura[1].ToString();
                     d.Sigla = Leitura[2].ToString();
+                    d.Ativo = Convert.ToBoolean(Leitura[3]);
                     dt.Rows.Add(d.Linha());
                 }
             }

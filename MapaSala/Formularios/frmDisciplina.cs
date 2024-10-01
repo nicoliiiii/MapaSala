@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MapaSala.DAO;
+using MapaSala.Formularios.Editar;
 using Model.Entitidades;
 
 namespace MapaSala.Formularios
@@ -57,7 +58,7 @@ namespace MapaSala.Formularios
             numId.Value = 0;
             txtNomeDisciplina.Text = "";
             txtSigla.Text = "";
-          chbAtivoDis.Checked = "";
+          chbAtivoDis.Checked = false;
         }
 
         private void dtGridDisciplina_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -96,6 +97,12 @@ namespace MapaSala.Formularios
         {
             dtGridDisciplina.DataSource = dao.Pesquisar(txtPesquisa.Text);
 
+        }
+
+        private void dtGridDisciplina_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmEditarDisciplina editar = new frmEditarDisciplina();
+            editar.ShowDialog();
         }
     }
 }

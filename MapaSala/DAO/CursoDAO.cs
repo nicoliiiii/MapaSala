@@ -75,9 +75,9 @@ namespace MapaSala.DAO
             {
                 dt.Columns.Add(atributos.Name);
             }
-            if (Leitura.HasRows) //a linha existe? true or false
+            if (Leitura.HasRows) 
             {
-                while (Leitura.Read())//para pegar mais de um registro, faz uma consulta
+                while (Leitura.Read())
                 {
                     cursoEntidades curso = new cursoEntidades();
                     curso.Id = Convert.ToInt32(Leitura[0]);
@@ -103,13 +103,13 @@ namespace MapaSala.DAO
             }
             else
             {
-                query = "SELECT Id, Nome, Turno,Sigla, Ativo FROM Cursos WHERE NOME LIKE '%" + pesquisa + "%' ORDER BY ID desc"; //concatenação
+                query = "SELECT Id, Nome, Turno,Sigla, Ativo FROM Cursos WHERE NOME LIKE '%" + pesquisa + "%' ORDER BY ID desc"; 
             }
 
             SqlCommand Comando = new SqlCommand(query, Conexao);
             SqlDataReader Leitura = Comando.ExecuteReader();
 
-            foreach (var atributos in typeof(cursoEntidades).GetProperties())//laço de reoetição para ler listas
+            foreach (var atributos in typeof(cursoEntidades).GetProperties())
             {
                 dt.Columns.Add(atributos.Name);
             }
