@@ -46,6 +46,7 @@
     <Compile Include="Entitidades\DiaSemana.cs" />
     <Compile Include="Entitidades\DisciplinaEntidade.cs" />
     <Compile Include="Entitidades\Horario.cs" />
+    <Compile Include="Entitidades\MapaSalaEntidade.cs" />
     <Compile Include="Entitidades\ProfessoresEntidade.cs" />
     <Compile Include="Entitidades\SalasEntidade.cs" />
     <Compile Include="Entitidades\UsuariosEntidade.cs" />

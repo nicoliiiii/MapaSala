@@ -39,6 +39,7 @@ namespace MapaSala.Formularios
             DisciplinaEntidade d = new DisciplinaEntidade();
             d.Id = Convert.ToInt32(numId.Value);
             d.Nome = txtNomeDisciplina.Text;
+            d.Ativo = chbAtivoDis.Checked;
             d.Sigla = txtSigla.Text;
 
             dao.Inserir(d);
@@ -56,6 +57,7 @@ namespace MapaSala.Formularios
             numId.Value = 0;
             txtNomeDisciplina.Text = "";
             txtSigla.Text = "";
+          chbAtivoDis.Checked = "";
         }
 
         private void dtGridDisciplina_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -63,6 +65,7 @@ namespace MapaSala.Formularios
             LinhaSelecionada = e.RowIndex;
             txtNomeDisciplina.Text = dtGridDisciplina.Rows[LinhaSelecionada].Cells[1].Value.ToString();
             txtSigla.Text = dtGridDisciplina.Rows[LinhaSelecionada].Cells[2].Value.ToString();
+            chbAtivoDis.Checked = Convert.ToBoolean(dtGridDisciplina.Rows[LinhaSelecionada].Cells[3].Value);
             numId.Value = Convert.ToInt32(dtGridDisciplina.Rows[LinhaSelecionada].Cells[0].Value);
 
         }
@@ -83,7 +86,8 @@ namespace MapaSala.Formularios
             DataGridViewRow editar = dtGridDisciplina.Rows[LinhaSelecionada];
             editar.Cells[0].Value = numId.Value;
             editar.Cells[1].Value = txtNomeDisciplina.Text;
-            editar.Cells[2].Value = txtSigla.Text;
+            editar.Cells[2].Value = chbAtivoDis.Checked;
+            editar.Cells[3].Value = txtSigla.Text;
 
 
         }

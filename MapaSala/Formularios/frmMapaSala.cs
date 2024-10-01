@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MapaSala.Formularios
 {
-    public partial class MapaSala : Form
+    public partial class frmMapaSala : Form
     {
-        public MapaSala()
+        public frmMapaSala()
         {
             InitializeComponent();
         }
