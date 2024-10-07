@@ -99,7 +99,7 @@ namespace MapaSala.Formularios.Editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(263, 450);
             this.Controls.Add(this.btnSalvarEdit);
             this.Controls.Add(this.chkEditarDis);
             this.Controls.Add(this.label2);
@@ -107,6 +107,7 @@ namespace MapaSala.Formularios.Editar
             this.Controls.Add(this.txtEditar);
             this.Controls.Add(this.txtEditarDisciplina);
             this.Name = "frmEditarDisciplina";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditarDisciplina";
             this.ResumeLayout(false);
             this.PerformLayout();

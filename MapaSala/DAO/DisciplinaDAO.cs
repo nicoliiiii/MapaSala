@@ -45,12 +45,12 @@ namespace MapaSala.DAO
 
                 try
                 {
-                    // Preenche o DataTable com os dados da consulta
+                  
                     adapter.Fill(dataTable);
                 }
                 catch (Exception ex)
                 {
-                    // Lida com erros, se necessário
+                    
                     throw new Exception("Erro ao acessar os dados: " + ex.Message);
                 }
             }
@@ -68,7 +68,7 @@ namespace MapaSala.DAO
 
             SqlDataReader Leitura = Comando.ExecuteReader();
 
-            foreach (var atributos in typeof(DisciplinaEntidade).GetProperties())//laço de reoetição para ler listas
+            foreach (var atributos in typeof(DisciplinaEntidade).GetProperties())
             {
                 dt.Columns.Add(atributos.Name);
             }
