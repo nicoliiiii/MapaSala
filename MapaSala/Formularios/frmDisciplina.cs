@@ -101,6 +101,9 @@ namespace MapaSala.Formularios
 
         private void dtGridDisciplina_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if(e,RowIndex >= 0){
+                int id = Convert.ToInt32(dtGridDisciplina);
+            }
             frmEditarDisciplina editar = new frmEditarDisciplina();
             editar.ShowDialog();
         }

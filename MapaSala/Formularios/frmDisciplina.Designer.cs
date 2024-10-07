@@ -61,24 +61,24 @@ namespace MapaSala.Formularios
             // 
             // txtNomeDisciplina
             // 
-            this.txtNomeDisciplina.Location = new System.Drawing.Point(196, 45);
+            this.txtNomeDisciplina.Location = new System.Drawing.Point(157, 42);
             this.txtNomeDisciplina.Margin = new System.Windows.Forms.Padding(5);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(243, 23);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(199, 23);
             this.txtNomeDisciplina.TabIndex = 1;
             // 
             // txtSigla
             // 
-            this.txtSigla.Location = new System.Drawing.Point(451, 46);
+            this.txtSigla.Location = new System.Drawing.Point(396, 40);
             this.txtSigla.Margin = new System.Windows.Forms.Padding(5);
             this.txtSigla.Name = "txtSigla";
-            this.txtSigla.Size = new System.Drawing.Size(164, 23);
+            this.txtSigla.Size = new System.Drawing.Size(89, 23);
             this.txtSigla.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(446, 21);
+            this.label1.Location = new System.Drawing.Point(405, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 17);
@@ -88,7 +88,7 @@ namespace MapaSala.Formularios
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(191, 20);
+            this.label2.Location = new System.Drawing.Point(154, 21);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 17);
@@ -110,7 +110,7 @@ namespace MapaSala.Formularios
             this.numId.Location = new System.Drawing.Point(21, 46);
             this.numId.Margin = new System.Windows.Forms.Padding(5);
             this.numId.Name = "numId";
-            this.numId.Size = new System.Drawing.Size(165, 23);
+            this.numId.Size = new System.Drawing.Size(106, 23);
             this.numId.TabIndex = 6;
             // 
             // dtGridDisciplina
@@ -186,7 +186,7 @@ namespace MapaSala.Formularios
             // chbAtivoDis
             // 
             this.chbAtivoDis.AutoSize = true;
-            this.chbAtivoDis.Location = new System.Drawing.Point(638, 48);
+            this.chbAtivoDis.Location = new System.Drawing.Point(521, 42);
             this.chbAtivoDis.Name = "chbAtivoDis";
             this.chbAtivoDis.Size = new System.Drawing.Size(57, 21);
             this.chbAtivoDis.TabIndex = 13;
