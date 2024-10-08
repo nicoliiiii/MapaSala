@@ -50,7 +50,7 @@ namespace MapaSala.Formularios
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnSalvar.Location = new System.Drawing.Point(848, 85);
+            this.btnSalvar.Location = new System.Drawing.Point(612, 75);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(99, 35);
@@ -125,7 +125,7 @@ namespace MapaSala.Formularios
             this.dtGridDisciplina.Name = "dtGridDisciplina";
             this.dtGridDisciplina.ReadOnly = true;
             this.dtGridDisciplina.RowHeadersWidth = 51;
-            this.dtGridDisciplina.Size = new System.Drawing.Size(1026, 426);
+            this.dtGridDisciplina.Size = new System.Drawing.Size(742, 426);
             this.dtGridDisciplina.TabIndex = 7;
             this.dtGridDisciplina.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridDisciplina_CellClick);
             this.dtGridDisciplina.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridDisciplina_CellDoubleClick);
@@ -133,7 +133,7 @@ namespace MapaSala.Formularios
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnLimpar.Location = new System.Drawing.Point(953, 85);
+            this.btnLimpar.Location = new System.Drawing.Point(723, 75);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(99, 35);
@@ -145,7 +145,7 @@ namespace MapaSala.Formularios
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnExcluir.Location = new System.Drawing.Point(846, 40);
+            this.btnExcluir.Location = new System.Drawing.Point(610, 30);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(101, 35);
@@ -157,10 +157,10 @@ namespace MapaSala.Formularios
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.Location = new System.Drawing.Point(959, 40);
+            this.button1.Location = new System.Drawing.Point(723, 30);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 35);
+            this.button1.Size = new System.Drawing.Size(99, 35);
             this.button1.TabIndex = 10;
             this.button1.Text = "Editar";
             this.button1.UseVisualStyleBackColor = false;
@@ -197,7 +197,7 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 692);
+            this.ClientSize = new System.Drawing.Size(845, 692);
             this.Controls.Add(this.chbAtivoDis);
             this.Controls.Add(this.lblPesquisa);
             this.Controls.Add(this.txtPesquisa);

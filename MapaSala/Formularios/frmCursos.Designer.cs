@@ -53,7 +53,7 @@ namespace MapaSala.Formularios
             // 
             this.btneditar.BackColor = System.Drawing.Color.LavenderBlush;
             this.btneditar.Font = new System.Drawing.Font("Microsoft JhengHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneditar.Location = new System.Drawing.Point(804, 91);
+            this.btneditar.Location = new System.Drawing.Point(678, 91);
             this.btneditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(113, 30);
@@ -65,7 +65,7 @@ namespace MapaSala.Formularios
             // btnexcluir
             // 
             this.btnexcluir.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnexcluir.Location = new System.Drawing.Point(928, 49);
+            this.btnexcluir.Location = new System.Drawing.Point(804, 91);
             this.btnexcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnexcluir.Name = "btnexcluir";
             this.btnexcluir.Size = new System.Drawing.Size(113, 31);
@@ -91,11 +91,11 @@ namespace MapaSala.Formularios
             this.dtGridCursos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridCursos.BackgroundColor = System.Drawing.Color.Pink;
             this.dtGridCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridCursos.Location = new System.Drawing.Point(63, 200);
+            this.dtGridCursos.Location = new System.Drawing.Point(16, 193);
             this.dtGridCursos.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.dtGridCursos.Name = "dtGridCursos";
             this.dtGridCursos.RowHeadersWidth = 51;
-            this.dtGridCursos.Size = new System.Drawing.Size(951, 279);
+            this.dtGridCursos.Size = new System.Drawing.Size(724, 279);
             this.dtGridCursos.TabIndex = 18;
             this.dtGridCursos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridCursos_CellClick);
             // 
@@ -169,7 +169,7 @@ namespace MapaSala.Formularios
             // chkativo
             // 
             this.chkativo.AutoSize = true;
-            this.chkativo.Location = new System.Drawing.Point(572, 70);
+            this.chkativo.Location = new System.Drawing.Point(560, 60);
             this.chkativo.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.chkativo.Name = "chkativo";
             this.chkativo.Size = new System.Drawing.Size(57, 20);
@@ -181,7 +181,7 @@ namespace MapaSala.Formularios
             // lblPesquisar
             // 
             this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Location = new System.Drawing.Point(77, 143);
+            this.lblPesquisar.Location = new System.Drawing.Point(16, 143);
             this.lblPesquisar.Name = "lblPesquisar";
             this.lblPesquisar.Size = new System.Drawing.Size(69, 16);
             this.lblPesquisar.TabIndex = 23;
@@ -189,7 +189,7 @@ namespace MapaSala.Formularios
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(80, 162);
+            this.txtPesquisa.Location = new System.Drawing.Point(12, 162);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(265, 22);
             this.txtPesquisa.TabIndex = 24;
@@ -216,7 +216,7 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(925, 554);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSigla);
             this.Controls.Add(this.txtPesquisa);

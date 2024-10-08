@@ -57,7 +57,7 @@ namespace MapaSala.Formularios
             this.txtNome.Location = new System.Drawing.Point(104, 51);
             this.txtNome.Margin = new System.Windows.Forms.Padding(5);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(164, 23);
+            this.txtNome.Size = new System.Drawing.Size(115, 23);
             this.txtNome.TabIndex = 0;
             // 
             // label1
@@ -73,7 +73,7 @@ namespace MapaSala.Formularios
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 21);
+            this.label2.Location = new System.Drawing.Point(229, 21);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 17);
@@ -83,7 +83,7 @@ namespace MapaSala.Formularios
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(517, 21);
+            this.label3.Location = new System.Drawing.Point(420, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 17);
@@ -103,7 +103,7 @@ namespace MapaSala.Formularios
             // chkIsLab
             // 
             this.chkIsLab.AutoSize = true;
-            this.chkIsLab.Location = new System.Drawing.Point(726, 32);
+            this.chkIsLab.Location = new System.Drawing.Point(568, 34);
             this.chkIsLab.Margin = new System.Windows.Forms.Padding(5);
             this.chkIsLab.Name = "chkIsLab";
             this.chkIsLab.Size = new System.Drawing.Size(108, 21);
@@ -114,7 +114,7 @@ namespace MapaSala.Formularios
             // chkDisponivel
             // 
             this.chkDisponivel.AutoSize = true;
-            this.chkDisponivel.Location = new System.Drawing.Point(726, 66);
+            this.chkDisponivel.Location = new System.Drawing.Point(568, 71);
             this.chkDisponivel.Margin = new System.Windows.Forms.Padding(5);
             this.chkDisponivel.Name = "chkDisponivel";
             this.chkDisponivel.Size = new System.Drawing.Size(92, 21);
@@ -125,7 +125,7 @@ namespace MapaSala.Formularios
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnSalvar.Location = new System.Drawing.Point(862, 34);
+            this.btnSalvar.Location = new System.Drawing.Point(686, 34);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(96, 27);
@@ -136,18 +136,18 @@ namespace MapaSala.Formularios
             // 
             // txtNumPc
             // 
-            this.txtNumPc.Location = new System.Drawing.Point(280, 49);
+            this.txtNumPc.Location = new System.Drawing.Point(242, 49);
             this.txtNumPc.Margin = new System.Windows.Forms.Padding(5);
             this.txtNumPc.Name = "txtNumPc";
-            this.txtNumPc.Size = new System.Drawing.Size(200, 23);
+            this.txtNumPc.Size = new System.Drawing.Size(131, 23);
             this.txtNumPc.TabIndex = 11;
             // 
             // txtNumCadeira
             // 
-            this.txtNumCadeira.Location = new System.Drawing.Point(513, 49);
+            this.txtNumCadeira.Location = new System.Drawing.Point(423, 53);
             this.txtNumCadeira.Margin = new System.Windows.Forms.Padding(5);
             this.txtNumCadeira.Name = "txtNumCadeira";
-            this.txtNumCadeira.Size = new System.Drawing.Size(186, 23);
+            this.txtNumCadeira.Size = new System.Drawing.Size(96, 23);
             this.txtNumCadeira.TabIndex = 12;
             // 
             // dtGridSalas
@@ -159,7 +159,7 @@ namespace MapaSala.Formularios
             this.dtGridSalas.Margin = new System.Windows.Forms.Padding(5);
             this.dtGridSalas.Name = "dtGridSalas";
             this.dtGridSalas.RowHeadersWidth = 51;
-            this.dtGridSalas.Size = new System.Drawing.Size(1121, 406);
+            this.dtGridSalas.Size = new System.Drawing.Size(680, 406);
             this.dtGridSalas.TabIndex = 13;
             this.dtGridSalas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridSalas_CellClick);
             // 
@@ -174,7 +174,7 @@ namespace MapaSala.Formularios
             // 
             this.btneditar.BackColor = System.Drawing.Color.LavenderBlush;
             this.btneditar.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneditar.Location = new System.Drawing.Point(989, 71);
+            this.btneditar.Location = new System.Drawing.Point(800, 72);
             this.btneditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(110, 28);
@@ -186,7 +186,7 @@ namespace MapaSala.Formularios
             // btnexcluir
             // 
             this.btnexcluir.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnexcluir.Location = new System.Drawing.Point(989, 32);
+            this.btnexcluir.Location = new System.Drawing.Point(800, 36);
             this.btnexcluir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnexcluir.Name = "btnexcluir";
             this.btnexcluir.Size = new System.Drawing.Size(110, 25);
@@ -198,7 +198,7 @@ namespace MapaSala.Formularios
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnLimpar.Location = new System.Drawing.Point(862, 71);
+            this.btnLimpar.Location = new System.Drawing.Point(686, 71);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(96, 28);
@@ -210,7 +210,7 @@ namespace MapaSala.Formularios
             // lblPesquisa
             // 
             this.lblPesquisa.AutoSize = true;
-            this.lblPesquisa.Location = new System.Drawing.Point(31, 160);
+            this.lblPesquisa.Location = new System.Drawing.Point(16, 160);
             this.lblPesquisa.Name = "lblPesquisa";
             this.lblPesquisa.Size = new System.Drawing.Size(71, 17);
             this.lblPesquisa.TabIndex = 18;
@@ -218,9 +218,9 @@ namespace MapaSala.Formularios
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(34, 180);
+            this.txtPesquisa.Location = new System.Drawing.Point(19, 180);
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(341, 23);
+            this.txtPesquisa.Size = new System.Drawing.Size(261, 23);
             this.txtPesquisa.TabIndex = 19;
             this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
@@ -228,7 +228,7 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 692);
+            this.ClientSize = new System.Drawing.Size(939, 692);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.lblPesquisa);
             this.Controls.Add(this.btneditar);
