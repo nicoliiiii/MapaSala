@@ -38,6 +38,60 @@ namespace MapaSala.Formularios.Editar
             Conexao.Close();
            
         }
+
+        private void btnSalvarEdit_Click(object sender, EventArgs e)
+        {
+            string query = "update Disciplinas set Nome = @nome, Sigla = @sigla, Ativo = @ativo WHERE  Id = @id";
+
+            Conexao = new SqlConnection(LinhaConexao);
+            Conexao.Open();
+
+            SqlCommand comando = new SqlCommand(query, Conexao);
+
+            comando.Parameters.Add(new SqlParameter("@sigla", txtSiglaDisciplina.Text));
+            comando.Parameters.Add(new SqlParameter("@nome", txtNomeDisciplina.Text));
+            comando.Parameters.Add(new SqlParameter("@ativo", chkEditarDis.Checked));
+            comando.Parameters.Add(new SqlParameter("@id", label_id.Text));
+
+            int resposta = comando.ExecuteNonQuery();
+
+            if (resposta == 1)
+            {
+                MessageBox.Show("Disciplina Atualizada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao atualizar", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            string query = "Delete from Disciplinas WHERE  Id = @id";
+
+            Conexao = new SqlConnection(LinhaConexao);
+            Conexao.Open();
+
+            SqlCommand comando = new SqlCommand(query, Conexao);
+            comando.Parameters.Add(new SqlParameter("@id", label_id.Text));
+            int resposta = comando.ExecuteNonQuery();
+
+            if (resposta == 1)
+            {
+                MessageBox.Show("Disciplina Excluída com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
-    }
+}
+        
+    
+
+    
 

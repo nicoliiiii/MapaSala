@@ -38,6 +38,7 @@ namespace MapaSala.Formularios.Editar
             this.chkEditarDis = new System.Windows.Forms.CheckBox();
             this.btnSalvarEdit = new System.Windows.Forms.Button();
             this.label_id = new System.Windows.Forms.Label();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNomeDisciplina
@@ -89,12 +90,13 @@ namespace MapaSala.Formularios.Editar
             // 
             // btnSalvarEdit
             // 
-            this.btnSalvarEdit.Location = new System.Drawing.Point(45, 283);
+            this.btnSalvarEdit.Location = new System.Drawing.Point(20, 284);
             this.btnSalvarEdit.Name = "btnSalvarEdit";
             this.btnSalvarEdit.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarEdit.TabIndex = 6;
-            this.btnSalvarEdit.Text = "salvar";
+            this.btnSalvarEdit.Text = "Salvar";
             this.btnSalvarEdit.UseVisualStyleBackColor = true;
+            this.btnSalvarEdit.Click += new System.EventHandler(this.btnSalvarEdit_Click);
             // 
             // label_id
             // 
@@ -105,11 +107,22 @@ namespace MapaSala.Formularios.Editar
             this.label_id.TabIndex = 7;
             this.label_id.Text = "label3";
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(119, 284);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 8;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // frmEditarDisciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(263, 450);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.label_id);
             this.Controls.Add(this.btnSalvarEdit);
             this.Controls.Add(this.chkEditarDis);
@@ -135,5 +148,6 @@ namespace MapaSala.Formularios.Editar
         private System.Windows.Forms.CheckBox chkEditarDis;
         private System.Windows.Forms.Button btnSalvarEdit;
         private System.Windows.Forms.Label label_id;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
