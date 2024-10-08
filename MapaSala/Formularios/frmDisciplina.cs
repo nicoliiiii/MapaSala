@@ -17,6 +17,8 @@ namespace MapaSala.Formularios
 {
     public partial class frmDisciplina : Form
     {
+        private string LinhaConexao = "Server=LS05MPF;Database=AULA_DS;User Id=sa;Password=admsasql;";
+        private SqlConnection Conexao;
         DataTable dados;
         DisciplinaDAO dao = new DisciplinaDAO();
 
@@ -130,6 +132,33 @@ namespace MapaSala.Formularios
         {
             dtGridDisciplina.Rows.RemoveAt(LinhaSelecionada);
             LimparCampos();
+        }
+
+        private void btn_Novo_Click(object sender, EventArgs e)
+        {
+            string query = "insert into Disciplinas set Nome = @nome, Sigla = @sigla, Ativo = @ativo WHERE  Id = @id";
+
+            Conexao = new SqlConnection(LinhaConexao);
+            Conexao.Open();
+
+            SqlCommand comando = new SqlCommand(query, Conexao);
+
+            comando.Parameters.Add(new SqlParameter("@sigla", txtSiglaDisciplina.Text));
+            comando.Parameters.Add(new SqlParameter("@nome", txtNomeDisciplina.Text));
+            comando.Parameters.Add(new SqlParameter("@ativo", chbAtivoDis.Checked));
+
+            int resposta = comando.ExecuteNonQuery();
+
+            if (resposta == 1)
+            {
+                MessageBox.Show("Disciplina cadastrada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao cadastrar", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

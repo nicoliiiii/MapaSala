@@ -40,8 +40,9 @@ namespace MapaSala.Formularios
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSiglaDisciplina = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_Novo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridDisciplina)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numId)).BeginInit();
             this.SuspendLayout();
@@ -161,13 +162,13 @@ namespace MapaSala.Formularios
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click_1);
             // 
-            // textBox1
+            // txtSiglaDisciplina
             // 
-            this.textBox1.Location = new System.Drawing.Point(352, 39);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 23);
-            this.textBox1.TabIndex = 21;
+            this.txtSiglaDisciplina.Location = new System.Drawing.Point(352, 39);
+            this.txtSiglaDisciplina.Margin = new System.Windows.Forms.Padding(5);
+            this.txtSiglaDisciplina.Name = "txtSiglaDisciplina";
+            this.txtSiglaDisciplina.Size = new System.Drawing.Size(102, 23);
+            this.txtSiglaDisciplina.TabIndex = 21;
             // 
             // label4
             // 
@@ -178,13 +179,26 @@ namespace MapaSala.Formularios
             this.label4.TabIndex = 22;
             this.label4.Text = "Sigla";
             // 
+            // btn_Novo
+            // 
+            this.btn_Novo.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btn_Novo.Location = new System.Drawing.Point(656, 73);
+            this.btn_Novo.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_Novo.Name = "btn_Novo";
+            this.btn_Novo.Size = new System.Drawing.Size(112, 34);
+            this.btn_Novo.TabIndex = 23;
+            this.btn_Novo.Text = "Add Disciplina";
+            this.btn_Novo.UseVisualStyleBackColor = false;
+            this.btn_Novo.Click += new System.EventHandler(this.btn_Novo_Click);
+            // 
             // frmDisciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 692);
+            this.Controls.Add(this.btn_Novo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSiglaDisciplina);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
@@ -221,7 +235,8 @@ namespace MapaSala.Formularios
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSiglaDisciplina;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_Novo;
     }
 }
