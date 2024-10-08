@@ -173,7 +173,7 @@ namespace MapaSala.Formularios
             this.Sexta.HeaderText = "Sexta";
             this.Sexta.Name = "Sexta";
             // 
-            // MapaSala
+            // frmMapaSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,7 +189,8 @@ namespace MapaSala.Formularios
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Name = "MapaSala";
+            this.Name = "frmMapaSala";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MapaSala";
             ((System.ComponentModel.ISupportInitialize)(this.dtGridMapaSala)).EndInit();
             this.ResumeLayout(false);
