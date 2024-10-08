@@ -35,17 +35,20 @@ namespace MapaSala.Formularios.Editar
             {
                 while (Leitura.Read())
                 {
-
                     label_id.Text = Leitura[0].ToString();
-                     txtNomeDisciplina.Text = Leitura[1].ToString();
-                     txtSiglaDisciplina.Text = Leitura[2].ToString();
+                    txtNomeDisciplina.Text = Leitura[1].ToString();
+                    txtSiglaDisciplina.Text = Leitura[2].ToString();
                     chkEditarDis.Checked = Convert.ToBoolean(Leitura[3]);
-                 
+
                 }
             }
             Conexao.Close();
-           
+
         }
+
+      
+
+      
 
         private void btnSalvarEdit_Click(object sender, EventArgs e)
         {
@@ -98,8 +101,3 @@ namespace MapaSala.Formularios.Editar
         }
     }
 }
-        
-    
-
-    
-
