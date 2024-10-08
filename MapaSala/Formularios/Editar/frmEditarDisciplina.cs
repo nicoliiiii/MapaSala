@@ -14,15 +14,23 @@ namespace MapaSala.Formularios.Editar
     public partial class frmEditarDisciplina : Form
     {
         private string LinhaConexao = "Server=LS05MPF;Database=AULA_DS;User Id=sa;Password=admsasql;";
-        private SqlConnection Conexao; 
+        private SqlConnection Conexao;
         public frmEditarDisciplina(int DisciplinaId)
         {
             InitializeComponent();
-            string query = "select Id, Nome, Sigla, Ativo from Disciplinas where Id = @id";
+
+            string query = "select Id, Nome, Sigla, Ativo " +
+                "from Disciplinas where Id = @id";
+
+            Conexao = new SqlConnection(LinhaConexao);
             Conexao.Open();
-            SqlCommand Comando = new SqlCommand(query, Conexao);
-            Comando.Parameters.Add(new SqlParameter("@id", DisciplinaId));
-            SqlDataReader Leitura = Comando.ExecuteReader();
+
+            SqlCommand comando = new SqlCommand(query, Conexao);
+
+            comando.Parameters.Add(new SqlParameter("@id", DisciplinaId));
+
+            SqlDataReader Leitura = comando.ExecuteReader();
+
             if (Leitura.HasRows)
             {
                 while (Leitura.Read())
