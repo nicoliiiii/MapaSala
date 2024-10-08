@@ -113,6 +113,12 @@ namespace MapaSala.Formularios
                 editar.ShowDialog(); 
             }
         }
+        private void Fechou_Editar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+            dtGridDisciplina.DataSource = dao.ObterDisciplinas();
+        }
+
     }
-    }
+}
 
