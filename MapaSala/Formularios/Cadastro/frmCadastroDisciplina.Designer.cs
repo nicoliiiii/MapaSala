@@ -81,12 +81,13 @@ namespace MapaSala.Formularios.Cadastros
             // 
             // btnSalvarCadastro
             // 
+            this.btnSalvarCadastro.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnSalvarCadastro.Location = new System.Drawing.Point(34, 253);
             this.btnSalvarCadastro.Name = "btnSalvarCadastro";
             this.btnSalvarCadastro.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarCadastro.TabIndex = 5;
             this.btnSalvarCadastro.Text = "Salvar";
-            this.btnSalvarCadastro.UseVisualStyleBackColor = true;
+            this.btnSalvarCadastro.UseVisualStyleBackColor = false;
             this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
             // 
             // CadastroDisciplina
