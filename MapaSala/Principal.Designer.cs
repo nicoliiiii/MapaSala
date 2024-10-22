@@ -38,6 +38,7 @@ namespace MapaSala
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diasDaSemanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cursosXDisciplinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mapaSalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +50,7 @@ namespace MapaSala
             this.faltasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salasLivresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.todosProfessoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mapaSalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +82,8 @@ namespace MapaSala
             this.cursosToolStripMenuItem,
             this.diasDaSemanaToolStripMenuItem,
             this.cursosXDisciplinasToolStripMenuItem,
-            this.mapaSalaToolStripMenuItem});
+            this.mapaSalaToolStripMenuItem,
+            this.usuariosToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(83, 25);
             this.toolStripMenuItem1.Text = "Cadastros";
@@ -133,6 +135,13 @@ namespace MapaSala
             this.cursosXDisciplinasToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.cursosXDisciplinasToolStripMenuItem.Text = "Curso_Disciplinas";
             this.cursosXDisciplinasToolStripMenuItem.Click += new System.EventHandler(this.cursosXDisciplinasToolStripMenuItem_Click);
+            // 
+            // mapaSalaToolStripMenuItem
+            // 
+            this.mapaSalaToolStripMenuItem.Name = "mapaSalaToolStripMenuItem";
+            this.mapaSalaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.mapaSalaToolStripMenuItem.Text = "Mapa_Sala";
+            this.mapaSalaToolStripMenuItem.Click += new System.EventHandler(this.mapaSalaToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -210,12 +219,12 @@ namespace MapaSala
             this.todosProfessoresToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
             this.todosProfessoresToolStripMenuItem.Text = "Todos Professores";
             // 
-            // mapaSalaToolStripMenuItem
+            // usuariosToolStripMenuItem
             // 
-            this.mapaSalaToolStripMenuItem.Name = "mapaSalaToolStripMenuItem";
-            this.mapaSalaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
-            this.mapaSalaToolStripMenuItem.Text = "Mapa_Sala";
-            this.mapaSalaToolStripMenuItem.Click += new System.EventHandler(this.mapaSalaToolStripMenuItem_Click);
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -259,5 +268,6 @@ namespace MapaSala
         private System.Windows.Forms.ToolStripMenuItem diasDaSemanaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cursosXDisciplinasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mapaSalaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
     }
 }

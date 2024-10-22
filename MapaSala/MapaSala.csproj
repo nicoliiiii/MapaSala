@@ -53,6 +53,12 @@
     <Compile Include="DAO\HorarioDAO.cs" />
     <Compile Include="DAO\ProfessoresDAO.cs" />
     <Compile Include="DAO\SalasDAO.cs" />
+    <Compile Include="Formularios\Cadastro\frmCadastrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastro\frmCadastrarUsuario.Designer.cs">
+      <DependentUpon>frmCadastrarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Cadastro\frmCadastroDisciplina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Cadastro\frmCadastrarUsuario.resx">
+      <DependentUpon>frmCadastrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cadastro\frmCadastroDisciplina.resx">
       <DependentUpon>frmCadastroDisciplina.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMapaSala.resx">
       <DependentUpon>frmMapaSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
