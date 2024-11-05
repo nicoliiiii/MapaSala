@@ -84,6 +84,7 @@
             this.dtGridUsuarios.Name = "dtGridUsuarios";
             this.dtGridUsuarios.Size = new System.Drawing.Size(746, 344);
             this.dtGridUsuarios.TabIndex = 1;
+            this.dtGridUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridUsuarios_CellContentClick);
             // 
             // frmUsuarios
             // 

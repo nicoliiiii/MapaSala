@@ -60,5 +60,20 @@ namespace MapaSala.Formularios
             Usuarios u = new Usuarios();
             dtGridUsuarios.DataSource = u.Pesquisar(txtPesquisar.Text);
         }
+
+        private void dtGridUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                int id = Convert.ToInt32(
+                    dtGridUsuarios.Rows[e.RowIndex].Cells[0].Value);
+
+                frmEditarUsuarios editar = new frmEditarUsuarios(id);
+
+
+                editar.FormClosed += FecharForm;
+                editar.ShowDialog();
+            }
+        }
     }
 }
