@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dtGridUsuarios = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridUsuarios)).BeginInit();
@@ -50,22 +50,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Usuarios";
             // 
-            // btnNovo
-            // 
-            this.btnNovo.Location = new System.Drawing.Point(6, 19);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(152, 23);
-            this.btnNovo.TabIndex = 0;
-            this.btnNovo.Text = "Novo Usuario";
-            this.btnNovo.UseVisualStyleBackColor = true;
-            // 
-            // txtPesquisar
-            // 
-            this.txtPesquisar.Location = new System.Drawing.Point(266, 19);
-            this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(438, 20);
-            this.txtPesquisar.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -74,6 +58,24 @@
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Pesquisar";
+            // 
+            // txtPesquisar
+            // 
+            this.txtPesquisar.Location = new System.Drawing.Point(266, 19);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(438, 20);
+            this.txtPesquisar.TabIndex = 1;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged_1);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Location = new System.Drawing.Point(6, 19);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(152, 23);
+            this.btnNovo.TabIndex = 0;
+            this.btnNovo.Text = "Novo Usuario";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click_1);
             // 
             // dtGridUsuarios
             // 

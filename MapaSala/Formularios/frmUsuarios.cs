@@ -24,12 +24,7 @@ namespace MapaSala.Formularios
 
         }
 
-        private void btnNovo_Click(object sender, EventArgs e)
-        {
-            frmCadastrarUsuario frm = new frmCadastrarUsuario();
-            frm.FormClosed += FecharForm;
-            frm.ShowDialog();
-        }
+       
 
         private void FecharForm(object sender, FormClosedEventArgs e)
         {
@@ -37,12 +32,7 @@ namespace MapaSala.Formularios
             dtGridUsuarios.DataSource = u.PreencherGrid();
         }
 
-        private void txtPesquisar_TextChanged(object sender, EventArgs e)
-        {
-            Usuarios u = new Usuarios();
-            dtGridUsuarios.DataSource = u.Pesquisar(txtPesquisar.Text);
-        }
-
+       
         private void dtgridUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -56,6 +46,19 @@ namespace MapaSala.Formularios
                 editar.FormClosed += FecharForm;
                 editar.ShowDialog(); 
             }
+        }
+
+        private void btnNovo_Click_1(object sender, EventArgs e)
+        {
+            frmCadastrarUsuario frm = new frmCadastrarUsuario();
+            frm.FormClosed += FecharForm;
+            frm.ShowDialog();
+        }
+
+        private void txtPesquisar_TextChanged_1(object sender, EventArgs e)
+        {
+            Usuarios u = new Usuarios();
+            dtGridUsuarios.DataSource = u.Pesquisar(txtPesquisar.Text);
         }
     }
 }
