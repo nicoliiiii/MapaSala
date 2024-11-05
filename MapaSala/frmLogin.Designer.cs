@@ -1,5 +1,5 @@
 ﻿
-namespace MapaSala.Formularios
+namespace MapaSala
 {
     partial class frmLogin
     {
@@ -34,7 +34,7 @@ namespace MapaSala.Formularios
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.MaskedTextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtLogin = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@ namespace MapaSala.Formularios
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtSenha);
-            this.groupBox1.Controls.Add(this.txtUsuario);
+            this.groupBox1.Controls.Add(this.txtLogin);
             this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(328, 350);
@@ -62,6 +62,7 @@ namespace MapaSala.Formularios
             this.btnLogar.TabIndex = 9;
             this.btnLogar.Text = "Logar";
             this.btnLogar.UseVisualStyleBackColor = false;
+            this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
             // 
             // label2
             // 
@@ -88,12 +89,12 @@ namespace MapaSala.Formularios
             this.txtSenha.Size = new System.Drawing.Size(269, 20);
             this.txtSenha.TabIndex = 6;
             // 
-            // txtUsuario
+            // txtLogin
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(24, 84);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(269, 20);
-            this.txtUsuario.TabIndex = 5;
+            this.txtLogin.Location = new System.Drawing.Point(24, 84);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(269, 20);
+            this.txtLogin.TabIndex = 5;
             // 
             // frmLogin
             // 
@@ -116,6 +117,6 @@ namespace MapaSala.Formularios
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox txtSenha;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtLogin;
     }
 }
